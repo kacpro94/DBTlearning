@@ -1,0 +1,63 @@
+[0m19:05:45.026485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1087946e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109617750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109617890>]}
+
+
+============================== 19:05:45.029718 | 23f2a702-212b-4b25-973d-84e476238e1c ==============================
+[0m19:05:45.029718 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m19:05:45.030052 [debug] [MainThread]: running dbt with arguments {'introspect': 'True', 'debug': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'use_colors': 'True', 'empty': 'None', 'version_check': 'True', 'profiles_dir': '/Users/kacpro/.dbt', 'log_cache_events': 'False', 'log_format': 'default', 'warn_error': 'None', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'fail_fast': 'False', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'static_parser': 'True', 'invocation_command': 'dbt init ProjectGCP', 'use_experimental_parser': 'False'}
+[0m19:05:45.040447 [info ] [MainThread]: Creating dbt configuration folder at /Users/kacpro/.dbt
+[0m19:05:45.041665 [debug] [MainThread]: Starter project path: /Users/kacpro/DBTlearning/.venv/lib/python3.13/site-packages/dbt/include/starter_project
+[0m19:05:45.046319 [info ] [MainThread]: 
+Your new dbt project "ProjectGCP" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m19:05:45.046539 [info ] [MainThread]: Setting up your profile.
+[0m19:18:32.148601 [info ] [MainThread]: Profile ProjectGCP written to /Users/kacpro/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m19:18:32.183132 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 767.2205, "process_in_blocks": "0", "process_kernel_time": 0.634291, "process_mem_max_rss": "357433344", "process_out_blocks": "0", "process_user_time": 2.146691}
+[0m19:18:32.186121 [debug] [MainThread]: Command `dbt init` succeeded at 19:18:32.185868 after 767.22 seconds
+[0m19:18:32.187338 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c754050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c7196d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11c663020>]}
+[0m19:18:32.188071 [debug] [MainThread]: Flushing usage events
+[0m19:18:32.808584 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:19:18.494760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10c7686e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5eb750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5eb890>]}
+
+
+============================== 20:19:18.498054 | cb66d79c-33ee-447a-89ca-175b1b6ccad2 ==============================
+[0m20:19:18.498054 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m20:19:18.498393 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'version_check': 'True', 'printer_width': '80', 'log_cache_events': 'False', 'quiet': 'False', 'warn_error': 'None', 'use_colors': 'True', 'debug': 'False', 'profiles_dir': '/Users/kacpro/.dbt', 'invocation_command': 'dbt test', 'fail_fast': 'False', 'write_json': 'True', 'use_experimental_parser': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'empty': 'None', 'cache_selected_only': 'False', 'log_path': 'logs', 'no_print': 'None', 'log_format': 'default', 'target_path': 'None', 'indirect_selection': 'eager', 'introspect': 'True'}
+[0m20:19:18.498723 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/kacpro/DBTlearning/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:19:18.500620 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.052304417, "process_in_blocks": "0", "process_kernel_time": 0.162614, "process_mem_max_rss": "110329856", "process_out_blocks": "0", "process_user_time": 0.692556}
+[0m20:19:18.500919 [debug] [MainThread]: Command `dbt test` failed at 20:19:18.500858 after 0.05 seconds
+[0m20:19:18.501096 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d5fa520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d621250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10d678490>]}
+[0m20:19:18.501269 [debug] [MainThread]: Flushing usage events
+[0m20:19:19.673674 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:20:14.617404 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1083c86e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10924b750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10924b890>]}
+
+
+============================== 20:20:14.620770 | eeafe2dd-8661-45c1-8934-8cbe3ccf0fb6 ==============================
+[0m20:20:14.620770 [info ] [MainThread]: Running with dbt=1.11.0-rc1
+[0m20:20:14.621102 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'use_colors': 'True', 'version_check': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'debug': 'False', 'quiet': 'False', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'profiles_dir': '/Users/kacpro/.dbt', 'warn_error': 'None', 'write_json': 'True', 'introspect': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'empty': 'None', 'use_experimental_parser': 'False', 'no_print': 'None'}
+[0m20:20:14.621445 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /Users/kacpro/DBTlearning/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:20:14.623364 [debug] [MainThread]: Resource report: {"command_name": "test", "command_success": false, "command_wall_clock_time": 0.047042917, "process_in_blocks": "0", "process_kernel_time": 0.138543, "process_mem_max_rss": "110280704", "process_out_blocks": "0", "process_user_time": 0.66409}
+[0m20:20:14.623679 [debug] [MainThread]: Command `dbt test` failed at 20:20:14.623618 after 0.05 seconds
+[0m20:20:14.623860 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10925a520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109281250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1092d8490>]}
+[0m20:20:14.624032 [debug] [MainThread]: Flushing usage events
+[0m20:20:15.243156 [debug] [MainThread]: An error was encountered while trying to flush usage events

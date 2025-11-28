@@ -1,0 +1,25 @@
+# models/sources.yml
+
+version: 2
+
+sources:
+  - name: sadp_raw
+    database: sadp-production 
+    schema: TrainingDataSet 
+
+    tables:
+      - name: tlc_green_trips_2022
+        description: Dane klientow z systemu CRM.
+        tests:
+          - not_null: # Sprawdź, czy tabela na pewno istnieje
+              column_name: vendor_id
+      - name: tlc_yellow_trips_2022
+        description: Transakcje sprzedazowe.
+        tests:
+          - not_null: # Sprawdź, czy tabela na pewno istnieje
+              column_name: vendor_id
+      - name: taxi_zone_geom
+        description: Transakcje sprzedazowe.
+        tests:
+          - not_null: # Sprawdź, czy tabela na pewno istnieje
+              column_name: vendor_id
